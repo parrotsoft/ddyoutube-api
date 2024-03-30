@@ -18,16 +18,8 @@ def download():
     except:
         return {
             "status": "Error",
-            "message": 'An error has download video'
+            "message": 'An error downloading the video.'
         }
     
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8001, debug=True)    
-
-
-"""
-POST: http://127.0.0.1:8001/download
-{
-    "link": "https://www.youtube.com/watch?v=C-uICquhs04&list=RDC-uICquhs04&start_radio=1"
-}
-"""
