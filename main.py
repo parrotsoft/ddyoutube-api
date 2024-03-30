@@ -21,5 +21,10 @@ def download():
             "message": 'An error downloading the video.'
         }
     
-#if __name__ == '__main__':
-#    app.run(host='0.0.0.0', port=8001, debug=True)    
+    return {
+        "status": "None",
+        "message": 'None'
+    }
+    
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8001, debug=True)    
